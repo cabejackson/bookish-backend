@@ -38,9 +38,9 @@ app.use("/api/goals", goalsRouter); // requireAuth,
 
 
 
-app.get("/", (req, res) => {
-  res.send("Hello, Caleb!");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hello, Caleb!");
+// });
 
 app.use(function errorHandler(error, req, res, next) {
   let response;
