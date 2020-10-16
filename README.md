@@ -1,6 +1,91 @@
 # Express Boilerplate!
 
-This is a boilerplate project used for starting new projects!
+Here's the backend which serves my [Bowties & Books Application](https://bookish-client.vercel.app/)! The backend manages endpoints that use GET, POST and DELETE CRUD methods. You can learn more about the Front End code [here](https://github.com/cabejackson/bookish)
+
+https://rocky-woodland-08613.herokuapp.com/
+
+<!-- ## Table of Contents -->
+
+<!-- - [Demo Account](#Demo-Account)
+- [Storytime](#Storytime)
+- [Quick App Demo](#Quick-App-Demo) -->
+<!-- - [Endpoints](#A-More-Detailed-Look)
+- [Tech Stack](#Tech-Stack)
+  - [Front End](#Front-End)
+  - [Testing](#Testing)
+  - [Production](#Production)
+- [Getting Started](#Getting-Started)
+  - [Server Setup](#Server-Setup)
+- [Upcoming Features](#Upcoming-Features)
+- [About Me](#About-Me)
+  - [GitHub Profile](https://github.com/cabejackson)
+  - [LinkedIn](https://www.linkedin.com/in/caleb-jackson-cabe/)
+- [Special Thanks](#Special-Thanks) -->
+
+## API Documentation
+
+### All Endpoints
+
+-- /api/goals
+-- /api/users
+-- /api/login
+-- /api/auth
+
+### JWT Auth
+
+- `POST` request made to `/api/auth/login`
+
+* The body of the request consists of:
+
+```
+{
+  username: '',
+  password: ''
+}
+```
+
+### Additional Endpoints
+
+(e.g. signing up, creating goals, viewing saved goals)
+
+- `POST` request made to `/api/users`
+
+* The body of the request consists of:
+
+```
+{
+    "first_name": " ",
+    "last_name": " ",
+    "user_name": " ", // requires a unique username, so other users cannot already have that username
+    "email": " ", // requires @email.com formatting
+    "password": " " // requires 1uppercase, 1 lowercase, 1 special character and a number
+}
+```
+
+- `POST` request made to `/api/goals`
+
+* The body of the request consists of:
+
+```
+{
+    "tbr_number": " ",
+    "timeframe": " ",
+    "reading_goals": " ",
+    "bnb_users_id": " ", // required
+}
+```
+
+- `GET` request made to `goals/saved-reading-goals/user/${userId}/${goalId}`
+
+* The headers of the request consists of:
+
+```
+         headers: {
+                    "content-type": "application/json",
+                    'Authorization': `bearer ${TokenService.getCredentials().tokenKey}`, //clientside code used to retrieve the userId
+
+                }
+```
 
 ## Set up
 
