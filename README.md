@@ -89,7 +89,7 @@ https://rocky-woodland-08613.herokuapp.com/
 
 ## Tech Stack
 
-### Front End
+### Back End
 
 - Node and Express
   - Authentication using JWT
