@@ -87,6 +87,30 @@ https://rocky-woodland-08613.herokuapp.com/
                 }
 ```
 
+## Tech Stack
+
+### Front End
+
+- Node and Express
+  - Authentication using JWT
+  - RESTful Api
+- HTML5
+- CSS3
+
+### Testing
+
+- Supertest (integration)
+- Mocha and Chai (unit)
+
+### Database
+
+- Postgres
+- Knex.js - SQL wrapper
+
+### Production
+
+- Deployed via Heroku
+
 ## Set up
 
 Complete the following steps to start a new project (NEW-PROJECT-NAME):
